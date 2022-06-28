@@ -1,1 +1,31 @@
 // Write your classes here
+//tree
+class Tree {
+    constructor(species) {
+        this.species = species;
+    }
+    static definition() {
+        return "A tree is a perennial plant with an elongated stem, or trunk, supporting branches and leaves.";
+    }
+    }
+//deciduous
+class Deciduous extends Tree {
+    constructor(species, name) {
+        super(species);
+        this.name = name;
+    }
+    static definition() {
+        return "A tree is a perennial plant with an elongated stem, or trunk, supporting branches and leaves. Deciduous trees shed their leaves annually.";
+    }
+
+}
+//evergreen
+class Evergreen extends Tree {
+    constructor(species, name) {
+        super(species);
+        this.name = name;
+    }
+    static definition() {
+        return "A tree is a perennial plant with an elongated stem, or trunk, supporting branches and leaves. Evergreens keep their leaves all year round.";
+    }
+}
